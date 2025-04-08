@@ -8,7 +8,7 @@ class TestTemp(unittest.TestCase):
 
     def test_c_to_f_happy(self):
         self.assertEqual(celsius_to_far(0), 32)
-        self.assertEqual(celsius_to_far(-40), 40)
+        self.assertEqual(celsius_to_far(-40), float(-40))
 
 if __name__ == "__main__":
     unittest.main()
